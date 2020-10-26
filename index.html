@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Odyssey 2018</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="stylesheet" media="screen" href="assets/css/style.css">
+	</head>
+	<body class="landing">
+		<div class="count-particles">
+  			<span class="js-count-particles">--</span> 
+		</div>
+
+		<!-- particles.js container -->
+		<div id="particles-js"  style="background-color: #191919; background-size: auto;"></div>
+
+		<!-- scripts -->
+		<script src="assets/js/particles.js"></script>
+		<script src="assets/js/app.js"></script>
+
+		<!-- stats.js -->
+		<!--script src="js/lib/stats.js"></script-->
+		<script>
+		  var count_particles, stats, update;
+		  stats = new Stats;
+		  stats.setMode(0);
+		  stats.domElement.style.position = 'absolute';
+		  stats.domElement.style.left = '0px';
+		  stats.domElement.style.top = '0px';
+		  document.body.appendChild(stats.domElement);
+		  count_particles = document.querySelector('.js-count-particles');
+		  update = function() {
+		    stats.begin();
+		    stats.end();
+		    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+		      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+		    }
+		    requestAnimationFrame(update);
+		  };
+		  requestAnimationFrame(update);
+		</script>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Odyssey</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="Event_list_page/index.html">Events</a></li>
+											<!--<li><a href="elements.html">Elements</a></li>-->
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Odyssey 2018</h2>
+							<p><img src="images/logo.png" align="center" style='height: 30%; width: 30%; object-fit: contain'/></p>
+							<p>Welcome to path redefined.</p>
+							<!-- <ul class="actions">
+								<li><a href="#" class="button special">Activate</a></li>
+							</ul -->
+						</div>
+						<a href="#one" class="more scrolly"></a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2 style="color: rgba(255, 255, 255, 1); font-weight: 200;" align="center">Event Registration Opening In:</h2><p style="border-color: transparent;"></br></p>
+								<!-- Display the countdown timer in an element -->
+								<h2 id="demo" align="center" style="color: rgba(255, 255, 255, 1); font-weight: 800; font-family: Trebuchet MS; border-color: transparent;"></h2>
+								<script>
+								// Set the date we're counting down to
+								var countDownDate = new Date("Jul 6, 2018 12:00:00").getTime();
+
+								// Update the count down every 1 second
+								var x = setInterval(function() {
+
+								  // Get todays date and time
+								  var now = new Date().getTime();
+
+								  // Find the distance between now an the count down date
+								  var distance = countDownDate - now;
+
+								  // Time calculations for days, hours, minutes and seconds
+								  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+								  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+								  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+								  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+								  // Display the result in the element with id="demo"
+								  document.getElementById("demo").innerHTML = days + " : " + hours + " : "
+								  + minutes + " : " + seconds + "";
+
+								  // If the count down is finished, write some text 
+								  if (distance < 0) {
+									clearInterval(x);
+									document.getElementById("demo").innerHTML = "REGISTRATIONS OPEN NOW!";
+								  }
+								}, 1000);
+								</script>
+							</header>
+							<ul class="icons major">
+								<!--<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-clock-o major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>-->
+							</ul>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<!--<section id="cta" class="wrapper style2">
+						<div class="inner">
+							<header>
+								
+								<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+								<h2>What is Odyssey?</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</header>
+						</div>
+				</section>-->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+							<h2>What is Odyssey?</h2>
+								<p>Odyssey 2018 puts forward a multitude of events, dabbling in a plethora of areas, be it cooking or commerce, dance or drama, music or machines. Exquisitely crafted, all events are packed with competition, excitement and a promise to be some of the best you'll ever attend. As each aims at finding and testing varied skills and talents, determined to award the best, we at NPSHSR, welcome you and wish you all the best!</p>
+							</div>
+						</section>
+						<!--<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>Where can I sign up<br />
+								for an event?</h2>
+								<p>Well, right here of course!</p>
+							</div>
+					</section>-->
+				
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Help and Info</h2>
+								<p>Trust us. Follow our rules. Obey.</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-paper-plane-o">
+									<h3>Speed is key!</h3>
+									<p>Your sign up requests are sent immediately to the staff so don't worry about getting a late message.</p>
+								</li>
+								<li class="icon fa-commenting">
+									<h3>Contacts</h3>
+									<p>Feel free to contact our staff if you have any questions or queries. If there is any information not available, please let us know!</p>
+								</li>
+								<li class="icon fa-user-secret">
+									<h3>Your details are safe.</h3>
+									<p>Unlike Facebook we don't store your data. We use our reliable Google to get the signing up done :)</p>
+								</li>
+								<li class="icon fa-hand-o-down ">
+									<h3>What are you waiting for?</h3>
+									<p>Sign up for an event while you can, because a lot of fun awaits you!</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Where can I sign up for an event?</h2>
+								<p>Well, right here of course!</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="Event_list_page/index.html" class="button fit">Sign Up</a></li>
+								<li><a href="mailto:odyssey2018official@gmail.com" class="button fit">Contact Us</a></li>
+							</ul>
+						</div>
+					</section>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://tinyurl.com/odyssey2018fb" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="mailto:odyssey2018official@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; 2018 Odyssey</li><li>Made with ♥ by JR | NK | NS | SS</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
